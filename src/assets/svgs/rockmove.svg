@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64 Bit Versión de evaluación) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="131px" height="100px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 24.39 18.58"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str5 {stroke:black;stroke-width:0.37;stroke-miterlimit:22.9256}
+    .str2 {stroke:#BEA87F;stroke-width:0.37;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:0.44;stroke-miterlimit:22.9256}
+    .str3 {stroke:black;stroke-width:0.44;stroke-miterlimit:22.9256}
+    .str1 {stroke:#D9C69E;stroke-width:0.44;stroke-miterlimit:22.9256}
+    .str4 {stroke:#FF99CC;stroke-width:0.44;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil3 {fill:black}
+    .fil4 {fill:black}
+    .fil2 {fill:#BEA87F}
+    .fil1 {fill:#D9C69E}
+    .fil6 {fill:#FF99CC}
+    .fil5 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polyline class="fil0 str0" points="17.26,14.35 23.36,15.35 23.93,13.02 "/>
+  <polyline class="fil0 str0" points="7.84,14.78 12.95,18.26 14.45,16.39 "/>
+  <path class="fil1 str1" d="M9.8 12.75c-6.62,-1.06 -7.89,-3.9 -4.27,-8.35 1.49,-2.87 4.24,-3.82 8.09,-3.4 3.22,0.24 5.75,1.6 7.21,4.76 2.87,4.13 0.76,5.77 -2.69,6.78 -2.79,0.9 -5.57,0.97 -8.34,0.21z"/>
+  <path class="fil2 str2" d="M7.95 14.74c-8.13,-1.13 -9.76,-4.56 -5.45,-10.1 1.76,-3.55 5.1,-4.8 9.82,-4.37 3.94,0.2 7.08,1.8 8.94,5.63 3.62,4.97 1.09,7.04 -3.11,8.36 -3.47,0.23 -6.87,0.39 -10.2,0.48zm1.93 -2.21c-6.64,-0.92 -7.97,-3.73 -4.45,-8.25 1.43,-2.91 4.16,-3.92 8.02,-3.58 3.22,0.17 5.78,1.48 7.3,4.61 2.96,4.06 0.89,5.75 -2.54,6.83 -2.76,0.96 -5.54,1.09 -8.33,0.39z"/>
+  <ellipse class="fil3 str3" cx="10.15" cy="5.65" rx="0.82" ry="0.39"/>
+  <ellipse class="fil3 str3" cx="16.81" cy="5.47" rx="0.82" ry="0.39"/>
+  <path class="fil3" d="M15.78 8.07c0,0.01 0,0.01 0,0.02 0,0.3 -0.97,0.55 -2.18,0.55 -1.2,0 -2.18,-0.25 -2.18,-0.55 0,-0.01 0,-0.01 0,-0.02l4.36 0z"/>
+  <polyline class="fil0 str0" points="3.06,7 0.94,9.7 3.08,12.42 1.64,13.49 "/>
+  <path class="fil3" d="M12.82 18.49c-0.4,-0.32 -0.32,-1.09 0.19,-1.72 0.51,-0.63 1.24,-0.88 1.64,-0.56 0.08,0.07 0.15,0.15 0.19,0.25l-1.87 2.12c-0.06,-0.02 -0.11,-0.05 -0.15,-0.09z"/>
+  <path class="fil4" d="M23.59 15.78c-0.51,-0.09 -0.8,-0.81 -0.66,-1.61 0.15,-0.79 0.68,-1.36 1.18,-1.27 0.1,0.02 0.2,0.06 0.28,0.12l-0.62 2.76c-0.06,0.01 -0.12,0.01 -0.18,0z"/>
+  <circle class="fil5" cx="10.06" cy="5.5" r="0.3"/>
+  <circle class="fil5" cx="16.78" cy="5.31" r="0.3"/>
+  <ellipse class="fil6 str4" cx="11.16" cy="7.05" rx="0.53" ry="0.34"/>
+  <ellipse class="fil6 str4" cx="16.34" cy="6.93" rx="0.53" ry="0.34"/>
+  <line class="fil0 str5" x1="14.82" y1="4.1" x2="17.43" y2= "3.85" />
+  <line class="fil0 str5" x1="8.47" y1="4.28" x2="11.08" y2= "4.04" />
+ </g>
+</svg>

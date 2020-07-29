@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64 Bit Versión de evaluación) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="54px" height="75px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7.922 10.915"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#CDD4C9}
+    .fil2 {fill:#DDE7DB}
+    .fil1 {fill:#EBF7EC}
+    .fil4 {fill:gray;fill-rule:nonzero}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <radialGradient id="id0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.015253 -1.23664 -1.40498 0.0438544 11 9)" cx="3.106" cy="5.632" r="4.36" fx="3.106" fy="5.632">
+   <stop offset="0" style="stop-opacity:1; stop-color:#F0F3EA"/>
+   <stop offset="0.509804" style="stop-opacity:1; stop-color:#E4F0E5"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#F0F3EA"/>
+  </radialGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="6.904,5.458 3.739,3.277 0.574,1.097 0.574,5.458 0.574,9.818 3.739,7.638 "/>
+  <polygon class="fil1" points="6.904,5.458 0.574,9.818 0,10.915 7.922,5.458 "/>
+  <polygon class="fil2" points="0,0 7.922,5.458 6.904,5.458 0.574,1.097 "/>
+  <polygon class="fil3" points="0,10.915 0,0 0.574,1.097 0.574,9.818 "/>
+  <path class="fil4" d="M1.65 5.651l0 -0.388c0.089,0 0.134,-0.034 0.134,-0.102 0,-0.062 -0.034,-0.093 -0.103,-0.093 -0.069,0 -0.104,0.043 -0.104,0.128l0 0.967 -0.44 0 0 -0.922c0,-0.095 0.01,-0.173 0.029,-0.234 0.019,-0.061 0.052,-0.118 0.098,-0.171 0.053,-0.059 0.118,-0.105 0.196,-0.138 0.078,-0.034 0.159,-0.051 0.241,-0.051 0.151,0 0.278,0.05 0.38,0.151 0.102,0.101 0.153,0.227 0.153,0.376 0,0.146 -0.046,0.263 -0.137,0.354 -0.084,0.083 -0.211,0.124 -0.379,0.124l-0.068 -0.001zm0.735 -0.969l0.44 0 0 0.88c0,0.069 0.011,0.114 0.033,0.137 0.022,0.023 0.066,0.034 0.131,0.034l0.023 0 0 0.43 -0.117 0c-0.161,0 -0.286,-0.047 -0.375,-0.141 -0.09,-0.093 -0.135,-0.223 -0.135,-0.389l0 -0.951zm1.312 0.737l0 0.391 -0.127 0 0 0.353 -0.44 0 0 -0.942c0,-0.181 0.05,-0.323 0.149,-0.423 0.1,-0.101 0.24,-0.151 0.42,-0.151 0.174,0 0.302,0.045 0.386,0.136 0.083,0.092 0.124,0.232 0.124,0.423l0 0.957 -0.439 0 0 -0.928c0,-0.057 -0.007,-0.096 -0.021,-0.118 -0.014,-0.022 -0.039,-0.033 -0.075,-0.033 -0.069,0 -0.104,0.05 -0.104,0.151l0 0.184 0.127 0zm1.821 -0.737l-0.419 0.659 0 0.822 -0.439 0 0 -0.822 -0.422 -0.659 0.447 0 0.19 0.305 0.205 -0.305 0.438 0z"/>
+ </g>
+</svg>
