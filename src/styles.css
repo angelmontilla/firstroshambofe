@@ -1,5 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family:CarterOne;
+    src: url("assets/fonts/CarterOne-Regular.ttf") format("truetype");
+}
+
 body {
     background-image: url("assets/svgs/back.svg");
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 200%;
+    font-family: CarterOne;
 }

@@ -1,0 +1,17 @@
+<p class="text-center parSelector" >Select One Option - GOOD LUCK!</p>
+
+<div class="btn-group btn-group-toggle divSelector" data-toggle="buttons">
+    <label [ngClass]="{'btn btn-light': true, 'focus active': state==0}" (click)="selectedOpcion(0)">
+        <input type="radio" name="rock" value="rock" />ROCK<br /><br />
+        <img class="img-fluid" src="../assets/svgs/rockmove.svg" alt="Rock moving" /><br />
+    </label>
+    <label [ngClass]="{'btn btn-light': true, 'focus active': state==1}" (click)="selectedOpcion(1)">
+        <input type="radio" name="move" value="paper" />PAPER<br /><br />
+        <img class="img-fluid" src="../assets/svgs/papermove.svg" alt="Paper Moving" /><br />
+    </label>
+    <label [ngClass]="{'btn btn-light': true, 'focus active': state==2}" (click)="selectedOpcion(2)">
+        <input type="radio" name="move" value="scissors" />SCISSORS<br /><br />
+        <img class="img-fluid" src="../assets/svgs/scissorsmove.svg" alt="Scissors Moving" /><br /><br />
+    </label>
+</div>
+
