@@ -7,5 +7,6 @@
 export enum Enumresult {
     FIRST,
     SECOND,
+    DRAW,
     UNKNOWED
 }

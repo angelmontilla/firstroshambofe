@@ -39,4 +39,16 @@ export class ClassRepoMove {
             this.aMoves = new Array<ClassMove>();
         }
     }
+
+    /**
+     * @description only for testing
+     *
+     * @memberof ClassRepoMove
+     */
+    write() {
+        console.log('======== WRITING SCORES =======');
+        this.aMoves.forEach(element => {
+            console.log(`first: ${element.first} second: ${element.second} result ${element.result}`);
+        });
+    }
 }
