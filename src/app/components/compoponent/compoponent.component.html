@@ -1,5 +1,9 @@
-<div style="background-color: #F8F9FA;">
-    <p class="text-center" style="width: 100%;margin-bottom: 0px;margin-top: 0px;height: 3em;background-color: #b4b4b4;">Other<br />Choise</p>
-    <img src="../../../assets/svgs/papermove.svg" style="height: 13em;padding-top: 1em;padding-bottom: 1em;" width="100%" />
+<div class="divothsel">
+    <p class="text-center pSecondsel">Other<br />Choise</p>
+
+    <img *ngIf="image!=3 else elsetag" [src]="actualImage[image]" class="iSecondsel" width="100%" />
+    <ng-template #elsetag>
+        <div class="iSecondsel"></div>
+    </ng-template>    
 </div>
 

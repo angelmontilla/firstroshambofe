@@ -1,8 +1,8 @@
 <div class="text-center divplay" (click)="playClicked()">
     <p class="text-center pplay">Make your Move</p>
     
-    <img *ngIf="status==0 else activo" [src]="images[0]" class="iplay" width="100%" />
-    <ng-template #activo>
+    <img *ngIf="status==0 else elsetag" [src]="images[0]" class="iplay" width="100%" />
+    <ng-template #elsetag>
         <img [src]="images[1]" class="iplay" width="100%" />
     </ng-template>
     
