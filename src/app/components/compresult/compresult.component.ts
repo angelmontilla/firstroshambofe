@@ -12,17 +12,20 @@ export class CompresultComponent implements OnInit {
 
   actualImage: string[] = ['../../../assets/svgs/rockwins.svg',
                            '../../../assets/svgs/rockloses.svg',
+                           '../../../assets/svgs/rockmove.svg',
                            '../../../assets/svgs/paperwins.svg',
                            '../../../assets/svgs/paperloses.svg',
-                           '../../../assets/svgs/scissorwins.svg',
-                           '../../../assets/svgs/scissorloses.svg',
+                           '../../../assets/svgs/papermove.svg',
+                           '../../../assets/svgs/scissorswins.svg',
+                           '../../../assets/svgs/scissorsloses.svg',
+                           '../../../assets/svgs/scissorsmove.svg',
                           ''];
 
   constructor() { }
 
   ngOnInit(): void {
     if (this.image === undefined) {
-      this.image = 6;
+      this.image = 9;
     }
   }
 

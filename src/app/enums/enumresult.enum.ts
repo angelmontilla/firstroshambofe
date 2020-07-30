@@ -5,7 +5,7 @@
  * @enum {number}
  */
 export enum Enumresult {
-    FIRST = 'First',
-    SECOND = 'Second',
-    UNKNOWED = 'Unknowed'
+    FIRST,
+    SECOND,
+    UNKNOWED
 }

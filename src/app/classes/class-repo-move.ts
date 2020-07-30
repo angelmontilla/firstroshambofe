@@ -27,4 +27,16 @@ export class ClassRepoMove {
     get listMoves(): ClassMove[] {
         return this.aMoves;
     }
+
+    /**
+     * @description remove all array entrances
+     *
+     * @param {boolean} confirm
+     * @memberof ClassRepoMove
+     */
+    remove(confirm: boolean) {
+        if (confirm) {
+            this.aMoves = new Array<ClassMove>();
+        }
+    }
 }

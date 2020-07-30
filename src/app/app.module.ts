@@ -11,6 +11,7 @@ import { ComprestartComponent } from './components/comprestart/comprestart.compo
 import { ComptableComponent } from './components/comptable/comptable.component';
 import { CompselectorComponent } from './components/compselector/compselector.component';
 import { CompfirstselComponent } from './components/compfirstsel/compfirstsel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CompfirstselComponent } from './components/compfirstsel/compfirstsel.co
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

@@ -3,6 +3,7 @@ import { ClassRepoMove } from './classes/class-repo-move';
 import { ClassMove } from './classes/class-move';
 import { Enummove } from './enums/enummove.enum';
 import { Enumresult } from './enums/enumresult.enum';
+import { SrvfirstroshamboService } from './services/srvfirstroshambo.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Enumresult } from './enums/enumresult.enum';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   title = 'Angel - First';
 
   listMovements: ClassRepoMove = new ClassRepoMove();
@@ -24,6 +26,7 @@ export class AppComponent implements OnInit {
                        '../../../assets/svgs/btnplay.svg'];
   // Btn play status unactivated
   statusPlay: number = 0;
+  rondNbr: number = 0;
 
   // Component Selected
   stateSelection: number = 3;
@@ -33,30 +36,28 @@ export class AppComponent implements OnInit {
   // Other player choice
   stateSelAftPlyScnd: number = 3;
   // Game Result
-  stateGameResult: number = 6;
+  stateGameResult: number = 9;
 
 
   // Btn play methods
   /**
-   * <b>changePlayMode</b>
-   * <ul>
-   * <li>change play button status to inactivated</li>
-   * <li>
-   * <li>
-   * </ul>
+   * @description Has pressed play btn
+   *
+   * @param {number} newStatus
+   * @memberof AppComponent
    */
   changePlayMode(newStatus: number) {
-    if (this.statusPlay == 1) {
+    if (this.statusPlay === 1) {
       this.statusPlay = 0; // Play unactivated
-      //console.log('Si hemos presionado play con seleccion ' + this.stateSelection);
 
       this.stateSelAfterPlay = this.stateSelection;
       this.stateSelAftPlyScnd = (Math.floor(Math.random() * 3));
 
-      this.listMovements.addResult(new ClassMove(Enummove[this.stateSelection], Enummove[this.stateSelAfterPlay], Enumresult[2]));
+      this.listMovements.addResult(new ClassMove(this.stateSelAfterPlay, this.stateSelAftPlyScnd, 2));
 
       // Restore view status to original
-      this.stateGameResult = 6;
+      this.rondNbr = this.listMovements.listMoves.length;
+      this.stateGameResult = 9;
       this.stateSelection = 3;
     }
   }
@@ -70,11 +71,26 @@ export class AppComponent implements OnInit {
     this.statusPlay = 1; // Play activated
     this.stateSelAfterPlay = 3; // No move still
     this.stateSelAftPlyScnd = 3; // Still no move
-    this.stateGameResult = 6; // Still no result
+    this.stateGameResult = 9; // Still no result
     this.stateSelection = event;
   }
 
+  // RESTART REQUEST
+  clear(confirm: boolean) {
+    this.listMovements.remove(true);
+  }
+
   // APPLICATION LOGIC
+
+  /**
+   * Creates an instance of AppComponent.
+   * <p>You have done dependency inyection</p>
+   * @param {SrvfirstroshamboService} service
+   * @memberof AppComponent
+   */
+  constructor(private service: SrvfirstroshamboService) {
+
+  }
 
   /**
    * <b>ngOnInit</b> Initial status
@@ -92,6 +108,11 @@ export class AppComponent implements OnInit {
     if (this.stateGameResult === undefined) {
       this.stateGameResult = 6;
     }
+
+    // lest go with subscription
+    this.service.askGetPlay().subscribe((data: any[])  => {
+      console.log('Observable say error: ' + data);
+    });
   }
 
 }

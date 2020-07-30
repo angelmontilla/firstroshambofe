@@ -18,7 +18,7 @@ export class ClassMove {
      * @param secondM - second player move
      * @param theResultM - result of move
      */
-    constructor(public firstM: Enummove, public secondM: Enummove, public theResultM: Enumresult) {
+    constructor(private firstM: Enummove, private secondM: Enummove, private theResultM: Enumresult) {
         if (firstM === null || firstM === undefined) {
             this.firstMove = Enummove.UNKNOW;
         } else {

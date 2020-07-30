@@ -13,6 +13,9 @@ export class CompbtnplayComponent implements OnInit {
   @Input()
   status: number;
 
+  @Input()
+  roundNumber: number;
+
   @Output()
   playMove = new EventEmitter<number>();
 
@@ -23,14 +26,17 @@ export class CompbtnplayComponent implements OnInit {
     if (this.status === undefined) {
       this.status = 0;
     }
+    if (this.roundNumber === undefined) {
+      this.roundNumber = 0;
+    }
   }
 
   /**
-   * <b>playClicked</b>
+   * @description play action required
+   *
+   * @memberof CompbtnplayComponent
    */
   playClicked() {
-    //this.status = (this.status === 0) ? 1 : 0;
-
     this.playMove.emit(this.status);
   }
 

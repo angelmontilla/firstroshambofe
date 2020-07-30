@@ -1,7 +1,7 @@
 <div class="divreslt">
     <p class="text-center preslt">RESULT OF GAME</p>
 
-    <img class="ireslt" *ngIf="image!=6 else elsetag" [src]="actualImage[image]" width="100%" />
+    <img class="ireslt" *ngIf="image != 9 else elsetag" [src]="actualImage[image]" width="100%" />
     <ng-template #elsetag>
         <div class="ireslt"></div>
     </ng-template>    

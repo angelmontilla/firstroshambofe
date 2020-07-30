@@ -10,9 +10,9 @@
             </thead>
             <tbody *ngFor="let move of results.listMoves">
                 <tr>
-                    <td>{{move.first}}</td>
-                    <td>{{move.second}}</td>
-                    <td>{{move.result}}</td>
+                    <td>{{getStringMove(move.first)}}</td>
+                    <td>{{getStringMove(move.second)}}</td>
+                    <td>{{getStringResult(move.result)}}</td>
                 </tr>
             </tbody>
         </table>

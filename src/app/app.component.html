@@ -5,14 +5,14 @@
     <div class="row">
         <app-compselector [state]="stateSelection" (selected)="moveSelected($event)" class="col-12 col-md-6 col-lg-6 text-center"></app-compselector>
 
-        <app-compbtnplay [images]="imgPlay" [status]="statusPlay" (playMove)="changePlayMode($event)" class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2 offset-3 offset-sm-3 offset-md-0 text-center"></app-compbtnplay>
+        <app-compbtnplay [images]="imgPlay" [status]="statusPlay" [roundNumber]="rondNbr" (playMove)="changePlayMode($event)" class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2 offset-3 offset-sm-3 offset-md-0 text-center"></app-compbtnplay>
         <app-compfirstsel [image]="stateSelAfterPlay" class="col-4 col-md-1 col-xl-1 offset-0 offset-sm-0" style="padding-right: 0px;"></app-compfirstsel>
         <app-compoponent [image]="stateSelAftPlyScnd" class="col-4 col-md-1 col-xl-1" style="padding-left: 0px;"></app-compoponent>
         <app-compresult [image]="stateGameResult" class="col-4 col-sm-4 col-md-2 col-lg-2"></app-compresult>
 
     </div>
 
-    <app-comprestart class="row"></app-comprestart>
+    <app-comprestart (askRestart)="clear($event)" class="row"></app-comprestart>
 
     <app-comptable [results]="listMovements" class="row"></app-comptable>
 
