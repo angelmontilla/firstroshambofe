@@ -8,7 +8,7 @@ import { retry, catchError, tap } from 'rxjs/operators';
 })
 export class SrvfirstroshamboService {
 
-  private URL_REST: string = 'http://localhost:8080/roshambo/playround';
+  private URL_REST: string = 'http://192.168.1.37:8080/roshambo/playround';
 
   /**
    * Creates an instance of SrvfirstroshamboService.

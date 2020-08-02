@@ -4,7 +4,7 @@ import { ClassMove } from './classes/class-move';
 import { Enummove } from './enums/enummove.enum';
 import { Enumresult } from './enums/enumresult.enum';
 import { SrvfirstroshamboService } from './services/srvfirstroshambo.service';
-import { takeUntil } from 'rxjs/operators';
+import { takeUntil, take } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { HttpResponse } from '@angular/common/http';
 import { stringify } from 'querystring';
@@ -70,8 +70,7 @@ export class AppComponent implements OnInit, OnDestroy {
       const first: string = Enummove[this.stateSelAfterPlay].toUpperCase();
       const second: string = Enummove[this.stateSelAftPlyScnd].toUpperCase();
 
-      this.service.askGetPlay(first, second).pipe(takeUntil(this.kills$)).subscribe((res: HttpResponse<any>)  => {
-        console.log ('DENTRO -> ' + res.body.roundResult);
+      this.service.askGetPlay(first, second).pipe(take(1)).subscribe((res: HttpResponse<any>)  => {
         this.theFinalResult = res.body.roundResult;
         // Preserve score
         this.listMovements.addResult(new ClassMove(this.stateSelAfterPlay, this.stateSelAftPlyScnd, Enumresult[this.theFinalResult]));
@@ -148,7 +147,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.kills$.next(true);
 
     // removing subscription it's a good practice
-    this.kills$.unsubscribe();    
+    this.kills$.unsubscribe();
   }
 
 }
